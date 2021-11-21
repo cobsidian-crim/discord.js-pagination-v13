@@ -1,4 +1,9 @@
-
+<div align="center">
+  <p>
+    <a href="https://nodei.co/npm/discord.js-pagination-v13
+/"><img src="https://nodei.co/npm/discord.js-pagination-v13.png?downloads=true&stars=true" alt="NPM info" /></a>
+  </p>
+</div>
 
 
 # discord.js-pagination v13
