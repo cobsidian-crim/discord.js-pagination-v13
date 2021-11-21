@@ -33,5 +33,5 @@ paginationEmbed(msg, pages, emojiList, timeout);
 // There you go, now you have paged embeds
 ```
 # Preview
-![Demo](https://github.com/cobsidian-crim/discord.js-pagination-v13/blob/master/pagination%20test.png)
+![Demo](https://github.com/cobsidian-crim/discord.js-pagination-emoji/blob/master/pagination%20test.png)
 Here is a test using the updated package!
