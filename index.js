@@ -1,4 +1,4 @@
-const paginationEmbed = async (msg, pages, emojiList = ['911757970197590036', '911757970415702076'], timeout = 120000) => {
+const paginationEmbed = async (msg, pages, emojiList = ['⏪', '⏩'], timeout = 120000) => {
 	let emojiDone = 0;
 	if (!msg && !msg.channel) throw new Error('Channel is inaccessible.');
 	if (!pages) throw new Error('Pages are not given.');
@@ -10,15 +10,19 @@ const paginationEmbed = async (msg, pages, emojiList = ['911757970197590036', '9
 	
 
 	const reactionCollector = curPage.createReactionCollector(
-		(reaction, user) => emojiList.includes(reaction.emoji.id),
+		(reaction, user) =>
+		
+		emojiList.includes(reaction.emoji.name),
 		{ time: timeout }
 	);
    
 	reactionCollector.on('collect', (reaction, user) => {
 		if(!user.bot){
 
+		
+
 		reaction.users.remove(msg.author);
-		switch (reaction.emoji.id) {
+		switch (reaction.emoji.name) {
 			case emojiList[0]:
 				page = page > 0 ? page -= 1 : pages.length - 1;
 				break;
